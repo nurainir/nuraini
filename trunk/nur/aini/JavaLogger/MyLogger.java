@@ -1,4 +1,4 @@
-package nur.aini;
+package nur.aini.JavaLogger;
 
 import java.io.IOException;
 import java.util.logging.FileHandler;

@@ -1,4 +1,4 @@
-package nur.aini;
+package nur.aini.JavaLogger;
 import java.util.logging.Formatter;
 import java.util.logging.LogRecord;
 
