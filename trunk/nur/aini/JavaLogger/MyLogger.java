@@ -12,12 +12,11 @@ import java.util.logging.Logger;
 
 public class MyLogger {
 
-		private static Logger logfile;
+		private final static Logger logfile = Logger.getLogger("mylogger");
 
- public MyLogger() throws  IOException {
-	 FileHandler fh = new FileHandler("log", true);
+ public MyLogger(String lokasilogger) throws  IOException {
+	 FileHandler fh = new FileHandler(lokasilogger, true);
      fh.setFormatter(new LogFormatter());
-     logfile = Logger.getLogger("mylogger");
      logfile.addHandler(fh);
 }
 
