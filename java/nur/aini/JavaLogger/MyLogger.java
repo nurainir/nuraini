@@ -12,28 +12,28 @@ import java.util.logging.Logger;
 
 public class MyLogger {
 
-		private final static Logger logfile = Logger.getLogger("mylogger");
+	private final static Logger logfile = Logger.getLogger("mylogger");
 
- public MyLogger(String lokasilogger) throws  IOException {
-	 FileHandler fh = new FileHandler(lokasilogger, true);
-     fh.setFormatter(new LogFormatter());
-     logfile.addHandler(fh);
-}
+	public MyLogger(String lokasilogger) throws  IOException {
+		FileHandler fh = new FileHandler(lokasilogger, true);
+		fh.setFormatter(new LogFormatter());
+		logfile.addHandler(fh);
+	}
 
- public void run()
- {
-	 logfile.info("program jalan");
-	 logfile.warning("peringatan!");
-	 logfile.severe("ada kesalahan");
- }
+	public void run()
+	{
+		logfile.info("program jalan");
+		logfile.warning("peringatan!");
+		logfile.severe("ada kesalahan");
+	}
 
 	/**
 	 * @param args
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
-		MyLogger log =new  MyLogger();
+		MyLogger log =new  MyLogger("log1.log");
 		log.run();
 	}
-
 }
+
