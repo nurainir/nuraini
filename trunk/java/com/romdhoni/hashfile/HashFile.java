@@ -13,32 +13,30 @@ import java.security.NoSuchAlgorithmException;
  * This file is written under information got from:
  * http://rgagnon.com/javadetails/java-0596.html for getHexString algorithm
  * http://www.javalobby.org/java/forums/t84420.html for Simple MD5Sum algorithm
- * @author abufauziya
+ * @author Muhammad Arif Romdhoni
  * @since Jan 28, 2011 07:57 PM (GMT+7)
  * @version 1.0
  */
 public class HashFile {
 
 	private static final byte[] HEX_CHAR_TABLE = {
-    (byte)'0', (byte)'1', (byte)'2', (byte)'3',
-    (byte)'4', (byte)'5', (byte)'6', (byte)'7',
-    (byte)'8', (byte)'9', (byte)'a', (byte)'b',
-    (byte)'c', (byte)'d', (byte)'e', (byte)'f'
-  };
+		(byte) '0', (byte) '1', (byte) '2', (byte) '3',
+		(byte) '4', (byte) '5', (byte) '6', (byte) '7',
+		(byte) '8', (byte) '9', (byte) 'a', (byte) 'b',
+		(byte) 'c', (byte) 'd', (byte) 'e', (byte) 'f'
+	};
 
-  private static String getHexString(byte[] raw) throws UnsupportedEncodingException
-  {
-    byte[] hex = new byte[2 * raw.length];
-    int index = 0;
+	private static String getHexString(byte[] raw) throws UnsupportedEncodingException {
+		byte[] hex = new byte[2 * raw.length];
+		int index = 0;
 
-    for (byte b : raw) {
-      int v = b & 0xFF;
-      hex[index++] = HEX_CHAR_TABLE[v >>> 4];
-      hex[index++] = HEX_CHAR_TABLE[v & 0xF];
-    }
-    return new String(hex, "ASCII");
-  }
-
+		for (byte b : raw) {
+			int v = b & 0xFF;
+			hex[index++] = HEX_CHAR_TABLE[v >>> 4];
+			hex[index++] = HEX_CHAR_TABLE[v & 0xF];
+		}
+		return new String(hex, "ASCII");
+	}
 
 	public static final String MODE_MD5 = "MD5";
 	public static final String MODE_SHA1 = "SHA-1";
