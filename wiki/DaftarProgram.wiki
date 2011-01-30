@@ -2,12 +2,12 @@
 #labels daftarprogram,Phase-Implementation,Featured
 
 = Java =
- * JavaCmd : contoh untuk membuat command line
- * JavaLogger : contoh membuat logger atau pencatatan proses di java
- * REST : contoh membuat koneksi ke REST server
- * Hashfile : membuat digest file dengan java security
+ * *JavaCmd*  contoh untuk membuat command line
+ * *JavaLogger*  contoh membuat logger atau pencatatan proses di java
+ * *REST*  contoh membuat koneksi ke REST server
+ * *Hashfile* : membuat digest file dengan java security
 
 
 
 = PHP =
- * userpassword : pembuatan _salt_ (garam) dan password secara sederhana dan menggunakan _library_ yang ada di PHP.
+ * *userpassword* pembuatan _salt_ (garam) dan password secara sederhana dan menggunakan _library_ yang ada di PHP.
