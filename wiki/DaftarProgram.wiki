@@ -6,6 +6,7 @@
  * *JavaLogger*  contoh membuat logger atau pencatatan proses di java
  * *REST*  contoh membuat koneksi ke REST server
  * *Hashfile* : membuat digest file dengan java security
+ * *FileFilter* : contoh untuk membuat penyaringan file dalam satu direktori berdasarkan ekstensinya
 
 
 
