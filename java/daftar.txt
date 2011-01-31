@@ -2,3 +2,4 @@
 2. JavaLogger : contoh membuat logger atau pencatatan proses di java
 3. REST : contoh membuat koneksi ke REST server
 4. Hashfile : membuat digest file dengan java security
+5. Filefilter : contoh untuk membuat penyaringan file dalam satu direktori berdasarkan ekstensinya
