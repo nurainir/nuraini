@@ -80,55 +80,17 @@ public class Item {
 		item.setAccelerator(SWT.MOD1 + 'O');
 		item.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-				final FileDialog dialog = new FileDialog(shell, SWT.OPEN);
-				dialog.open();
-				String filename = dialog.getFilterPath() + File.separator
-						+ dialog.getFileName();
-				File file = new File(filename);
-				if (file.isFile()) {
-					BufferedReader br;
-					try {
-						br = new BufferedReader(new FileReader(file));
-						StringBuffer buf = new StringBuffer();
-						String line = null;
-						while ((line = br.readLine()) != null) {
-							buf.append(line + '\n');
-						}
-						br.close();
-						text.setText(buf.toString());
-					} catch (FileNotFoundException e1) {
-						e1.printStackTrace();
-					} catch (IOException e2) {
-						e2.printStackTrace();
-					}
-				}
+				open();
 			}
 		});
 
 		// File->Save
 		item = new MenuItem(menu, SWT.PUSH);
-		final FileDialog dialog = new FileDialog(shell, SWT.SAVE);
-		dialog.setFilterNames(new String[] { "Text Files (*.txt)" });
-		dialog.setFilterExtensions(new String[] { "*.txt" });
-		dialog.setFilterPath("/home/dendy");
 		item.setText("&Save..\t\tCtrl+S");
 		item.setAccelerator(SWT.MOD1 + 'S');
 		item.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-
-				String fn = dialog.open();
-				if (fn != null) {
-					File file = new File(fn);
-
-					FileWriter fileWriter;
-					try {
-						fileWriter = new FileWriter(file);
-						fileWriter.write(text.getText());
-						fileWriter.close();
-					} catch (IOException e1) {
-						e1.printStackTrace();
-					}
-				}
+				save();
 			}
 		});
 
@@ -138,28 +100,9 @@ public class Item {
 		item = new MenuItem(menu, SWT.PUSH);
 		item.setText("&Print..\t\tCtrl+P");
 		item.setAccelerator(SWT.MOD1 + 'P');
-		final PrintDialog printDialog = new PrintDialog(shell, SWT.NONE);
 		item.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-				PrinterData printerData = printDialog.open();
-				if (!(printerData == null)) {
-					Printer p = new Printer(printerData);
-					p.startJob("PrintJob");
-					p.startPage();
-					Rectangle trim = p.computeTrim(0, 0, 0, 0);
-					Point dpi = p.getDPI();
-					int leftMargin = dpi.x + trim.x;
-					int topMargin = dpi.y / 2 + trim.y;
-					GC gc = new GC(p);
-					Font font = gc.getFont();
-					String printText = text.getText();
-					gc.drawString(printText, leftMargin,
-							topMargin + font.getFontData()[0].getHeight());
-					p.endPage();
-					gc.dispose();
-					p.endJob();
-					p.dispose();
-				}
+				print();
 			}
 		});
 
@@ -306,6 +249,11 @@ public class Item {
 		ToolItem itemSave = new ToolItem(bar, SWT.PUSH);
 		itemSave.setImage(save);
 		itemSave.setToolTipText("Save");
+		itemSave.addSelectionListener(new SelectionAdapter() {
+			public void widgetSelected(SelectionEvent e) {
+				save();
+			}
+		});
 
 		new ToolItem(bar, SWT.SEPARATOR);
 
@@ -369,6 +317,54 @@ public class Item {
 				e1.printStackTrace();
 			} catch (IOException e2) {
 				e2.printStackTrace();
+			}
+		}
+	}
+
+	/**
+	 * Method print() akan dipanggil di toolbar image open dan dipanggil di
+	 * menubar
+	 */
+
+	private void print() {
+		final PrintDialog printDialog = new PrintDialog(shell, SWT.NONE);
+		PrinterData printerData = printDialog.open();
+		if (!(printerData == null)) {
+			Printer p = new Printer(printerData);
+			p.startJob("PrintJob");
+			p.startPage();
+			Rectangle trim = p.computeTrim(0, 0, 0, 0);
+			Point dpi = p.getDPI();
+			int leftMargin = dpi.x + trim.x;
+			int topMargin = dpi.y / 2 + trim.y;
+			GC gc = new GC(p);
+			Font font = gc.getFont();
+			String printText = text.getText();
+			gc.drawString(printText, leftMargin, topMargin
+					+ font.getFontData()[0].getHeight());
+			p.endPage();
+			gc.dispose();
+			p.endJob();
+			p.dispose();
+		}
+	}
+
+	private void save() {
+		final FileDialog dialog = new FileDialog(shell, SWT.SAVE);
+		dialog.setFilterNames(new String[] { "Text Files (*.txt)" });
+		dialog.setFilterExtensions(new String[] { "*.txt" });
+		dialog.setFilterPath("/home/dendy");
+		String fn = dialog.open();
+		if (fn != null) {
+			File file = new File(fn);
+
+			FileWriter fileWriter;
+			try {
+				fileWriter = new FileWriter(file);
+				fileWriter.write(text.getText());
+				fileWriter.close();
+			} catch (IOException e1) {
+				e1.printStackTrace();
 			}
 		}
 	}
