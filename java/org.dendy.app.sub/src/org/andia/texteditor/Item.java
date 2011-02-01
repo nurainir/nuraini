@@ -80,7 +80,7 @@ public class Item {
 		item.setAccelerator(SWT.MOD1 + 'O');
 		item.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-				open();
+				openFile();
 			}
 		});
 
@@ -242,7 +242,7 @@ public class Item {
 		itemOpen.setToolTipText("Open");
 		itemOpen.addSelectionListener(new SelectionAdapter() {
 			public void widgetSelected(SelectionEvent e) {
-				open();
+				openFile();
 			}
 		});
 
@@ -296,7 +296,7 @@ public class Item {
 	 * Method open() akan dipanggil di toolbar image open dan dipanggil di
 	 * menubar
 	 */
-	private void open() {
+	private void openFile() {
 		final FileDialog dialog = new FileDialog(shell, SWT.OPEN);
 		dialog.open();
 		String filename = dialog.getFilterPath() + File.separator
