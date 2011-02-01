@@ -1,6 +1,6 @@
 #summary Sebelum anda melakukan commit sebaiknya membaca panduan berikut ini.
 
-= CheckOut SVN =
+= Checkout SVN =
 svn checkout https://nuraini.googlecode.com/svn/trunk/ nuraini --username alamat@gmail.com
 atau lihat [http://code.google.com/p/nuraini/source/checkout disini]
 
