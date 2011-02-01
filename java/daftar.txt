@@ -3,3 +3,5 @@
 3. REST : contoh membuat koneksi ke REST server
 4. Hashfile : membuat digest file dengan java security
 5. Filefilter : contoh untuk membuat penyaringan file dalam satu direktori berdasarkan ekstensinya
+6. TestHDFS : Program untuk melakukan testing apakah HDFS running, sekaligus contoh membuat dan menghapus file
+7. testHBase : Program untuk melakukan testing apakah HBASE running
