@@ -7,6 +7,8 @@
  * *REST*  contoh membuat koneksi ke REST server
  * *Hashfile* : membuat digest file dengan java security
  * *FileFilter* : contoh untuk membuat penyaringan file dalam satu direktori berdasarkan ekstensinya
+ * *TestHDFS* : Program untuk melakukan testing apakah HDFS running, sekaligus contoh membuat dan menghapus file
+ * *TestHBase* : Program untuk melakukan testing apakah HBASE running
 
 
 
