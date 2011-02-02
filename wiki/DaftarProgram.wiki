@@ -2,15 +2,17 @@
 #labels daftarprogram,Phase-Implementation,Featured
 
 = Java =
- * *JavaCmd*  contoh untuk membuat command line
- * *JavaLogger*  contoh membuat logger atau pencatatan proses di java
- * *REST*  contoh membuat koneksi ke REST server
+ * *JavaCmd* : contoh untuk membuat command line
+ * *JavaLogger* : contoh membuat logger atau pencatatan proses di java
+ * *REST* : contoh membuat koneksi ke REST server
  * *Hashfile* : membuat digest file dengan java security
- * *FileFilter* : contoh untuk membuat penyaringan file dalam satu direktori berdasarkan ekstensinya
+ * *ExtFilenameFilter* : contoh untuk membuat penyaringan file dalam satu direktori berdasarkan ekstensinya
+ * *RegexFilenameFilter* : contoh untuk membuat penyaringan file dalam satu direktori berdasarkan pattern regular expression
  * *TestHDFS* : Program untuk melakukan testing apakah HDFS running, sekaligus contoh membuat dan menghapus file
  * *TestHBase* : Program untuk melakukan testing apakah HBASE running
 
 
 
 = PHP =
- * *userpassword* pembuatan _salt_ (garam) dan password secara sederhana dan menggunakan _library_ yang ada di PHP.
+ * *UserPassword* : Pembuatan _salt_ (garam) dan password secara sederhana dan menggunakan _library_ yang ada di PHP.
+ * *FilenameSearch* : Pencarian file menggunakan ekstensi atau bagian dari nama file.
