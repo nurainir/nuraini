@@ -6,3 +6,5 @@
 6. RegexFilenameFilter : contoh untuk membuat penyaringan file dalam satu direktori berdasarkan pattern regular expression
 7. TestHDFS : Program untuk melakukan testing apakah HDFS running, sekaligus contoh membuat dan menghapus file
 8. testHBase : Program untuk melakukan testing apakah HBASE running
+9. FileOrder : Program untuk untuk mengurutkan daftar file
+10. TextEditor : Program GUI text editor
