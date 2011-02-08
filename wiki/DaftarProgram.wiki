@@ -10,7 +10,8 @@
  * *RegexFilenameFilter* : contoh untuk membuat penyaringan file dalam satu direktori berdasarkan pattern regular expression
  * *TestHDFS* : Program untuk melakukan testing apakah HDFS running, sekaligus contoh membuat dan menghapus file
  * *TestHBase* : Program untuk melakukan testing apakah HBASE running
-
+ * *FileOrder* : Program untuk untuk mengurutkan daftar file
+ * *TextEditor* : Program GUI text editor
 
 
 = PHP =
