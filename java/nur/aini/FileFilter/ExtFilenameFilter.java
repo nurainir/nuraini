@@ -49,7 +49,7 @@ public class ExtFilenameFilter implements FilenameFilter {
 	 * @param dir Direktori
 	 * @param name Nama file
 	 * @return Bernilai TRUE iff name memiliki ekstensi yang diharapkan
-	 * 
+	 *
 	 */
 	@Override
 	public boolean accept(final File dir, final String name) {
