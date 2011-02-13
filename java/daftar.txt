@@ -8,3 +8,4 @@
 8. testHBase : Program untuk melakukan testing apakah HBASE running
 9. FileOrder : Program untuk untuk mengurutkan daftar file
 10. TextEditor : Program GUI text editor
+11. CopyMergeRegexToLocal : untuk melakukan penggabungan beberapa file dalam satu direktori dengan format regex tertentu di hdfs
