@@ -1,0 +1,2 @@
+1. foo-1.0 : contoh pemaketan java di debian
+2. iin-3.0 : contoh pemaketan web dgn database di debian

@@ -1,0 +1,14 @@
+Source: foo
+Section: contrib/misc
+Priority: optional
+Maintainer: Nur Aini Rakhmawati <true>
+Build-Depends: debhelper (>> 5), javahelper , ant
+Build-Depends-Indep: sun-java6-jdk
+Standards-Version: 3.7.3
+Homepage: <homepage>
+
+Package: foo
+Architecture: all
+Depends: ${java:Depends}, ${misc:Depends}
+Description: Short Description
+ Long Description

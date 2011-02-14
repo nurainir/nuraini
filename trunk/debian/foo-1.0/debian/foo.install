@@ -1,0 +1,4 @@
+foo.jar usr/share/foo
+foo.desktop usr/share/applications
+fooshrek.png usr/share/foo
+lib/lala.jar usr/share/foo/lib

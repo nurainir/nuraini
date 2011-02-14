@@ -1,0 +1,36 @@
+#!/usr/bin/make -f
+
+build: build-stamp
+build-stamp:
+	dh build
+	touch build-stamp
+
+clean:
+	dh clean
+
+install: build install-stamp
+install-stamp:
+	dh install
+	touch install-stamp
+
+binary-arch: install
+	dh_install /web/* usr/share/iin
+	cp db/mysql.sql debian/iin/usr/share/dbconfig-common/data/iin/install/mysql
+	dh binary-arch
+
+binary-indep: install
+	dh_testdir
+	dh_testroot
+	dh_installdebconf	
+	dh_installchangelogs
+	dh_link
+	dh_strip
+	dh_compress
+	dh_fixperms
+	dh_installdeb
+	dh_perl
+	dh_gencontrol
+	dh_md5sums
+	dh_builddeb
+
+binary: binary-arch binary-indep

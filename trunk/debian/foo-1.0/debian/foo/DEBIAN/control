@@ -1,0 +1,11 @@
+Package: foo
+Version: 1.0-1
+Architecture: all
+Maintainer: Nur Aini Rakhmawati <true>
+Installed-Size: 68
+Depends: jarwrapper (>= 0.5), java-gcj-compat | java1-runtime | java2-runtime
+Section: contrib/misc
+Priority: optional
+Homepage: <homepage>
+Description: Short Description
+ Long Description

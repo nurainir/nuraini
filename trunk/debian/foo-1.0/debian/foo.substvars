@@ -1,0 +1,1 @@
+java:Depends=java-gcj-compat | java1-runtime | java2-runtime , jarwrapper (>=0.5)
