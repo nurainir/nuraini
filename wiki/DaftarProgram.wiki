@@ -19,3 +19,7 @@
 = PHP =
  * *UserPassword* : Pembuatan _salt_ (garam) dan password secara sederhana dan menggunakan _library_ yang ada di PHP.
  * *FilenameSearch* : Pencarian file menggunakan ekstensi atau bagian dari nama file.
+
+= DEBIAN =
+ * *foo-1.0* : contoh pemaketan java di debian
+ * *iin-3.0* : contoh pemaketan web dgn database di debian
