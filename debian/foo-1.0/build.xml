@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<project name="foo" default="compile" basedir=".">
+    <property name="src" value="src"/>
+    <property name="build" value="build"/>
+    <property name="lib" value="lib"/>
+    <property name="main-class"  value="foo"/>
+    <property name="lib"     value="lib"/>
+    <path id="classpath">
+        <fileset dir="${lib}" includes="**/*.jar"/>
+    </path>
+  <target name="compile">
+   <mkdir dir="${build}"/>
+    <javac srcdir="${src}" destdir="${build}" classpathref="classpath"/>    
+     </target>
+
+    <target name="jar" depends="compile">
+         <jar destfile="foo.jar" basedir="${build}">
+            <manifest>
+                <attribute name="Main-Class" value="${main-class}"/>
+		 <attribute name="Debian-Java-Home" value="/usr/lib/jvm/java-6-sun"/>
+            </manifest>
+        </jar>
+   </target>
+<target name="run" depends="jar">
+        <java jar="foo.jar" fork="true">
+	<classpath>
+                <path refid="classpath"/>
+                <path location="${lib}/*.jar"/>
+            </classpath>
+         </java>
+</target>
+
+ <target name="clean">
+        <delete dir="${build}"/>
+    </target>
+</project>

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Foo
+GenericName=Dekstop Application
+Comment=Foo bar iin
+Icon=/usr/share/foo/fooshrek.png
+Categories=Development;
+Exec=/usr/share/foo/foo.jar
+Type=Application
+StartupNotify=false

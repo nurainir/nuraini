@@ -1,0 +1,56 @@
+#!/bin/sh
+# postinst script for iin
+#
+# see: dh_installdeb(1)
+
+set -e
+. /usr/share/debconf/confmodule
+. /usr/share/dbconfig-common/dpkg/postinst.mysql 
+dbc_go iin $@
+
+alias_config()
+{
+. /usr/share/debconf/confmodule || exit
+aliasfile=/etc/iin/apache.conf
+
+cat > $aliasfile <<iin_alias_end
+Alias /iin /usr/share/iin
+
+<DirectoryMatch /usr/share/iin/>
+
+Options +FollowSymLinks
+AllowOverride None
+order deny,allow
+allow from all
+
+<IfModule mod_dir.c>
+        DirectoryIndex index.php
+</IfModule>
+
+</DirectoryMatch>
+iin_alias_end
+
+chmod 644 $aliasfile;
+
+}
+
+case "$1" in
+	configure)
+			
+			alias_config
+			#supaya bisa dipanggil lewat browser
+			find /usr/share/iin -type d -exec chmod 755 {} \;
+			find /usr/share/iin -type f -exec chmod 644 {} \;
+			chown -R www-data:www-data /usr/share/iin
+			#memasang file alias	
+			if [ ! -e /etc/apache2/conf.d/iin ] && [ -d /etc/apache2/conf.d ] 
+			then
+	   			ln -s /etc/iin/apache.conf /etc/apache2/conf.d/iin
+				/etc/init.d/apache2 restart			
+			fi
+;;
+	esac
+
+
+
+exit 0

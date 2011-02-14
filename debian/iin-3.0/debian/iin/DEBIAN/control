@@ -1,0 +1,11 @@
+Package: iin
+Version: 3.0
+Architecture: i386
+Maintainer: Nur Aini Rakhmawati <aini@darqueenice>
+Installed-Size: 92
+Depends: debconf (>= 0.5) | debconf-2.0
+Section: unknown
+Priority: extra
+Homepage: <insert the upstream URL, if relevant>
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
