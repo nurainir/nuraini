@@ -9,3 +9,4 @@
 9. FileOrder : Program untuk untuk mengurutkan daftar file
 10. TextEditor : Program GUI text editor
 11. CopyMergeRegexToLocal : untuk melakukan penggabungan beberapa file dalam satu direktori dengan format regex tertentu di hdfs
+12. ReadErrorProcess : untuk membaca error jika menjalankan JAR
