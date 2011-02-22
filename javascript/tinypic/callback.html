@@ -1,0 +1,53 @@
+<html>
+<head>
+<script type="text/javascript">
+/**
+Program kecil untuk memasukkan tinypic http://tinypic.com/  plugin sebagai tempat menyimpan gambar dan video
+author : Nur Aini Rakhmawati
+license : GPL
+since : 22 February 2011
+**/
+    window.onload = function(){
+
+     		var code = getParameter(document.location.href, "code");
+		//function ini harus ada di halaman yang memanggil halaman callback
+     		parent.parent.postIt(code);
+
+
+    }
+
+    function getParameter(queryString, parameterName) {
+
+        var parameterName = parameterName + "=";
+
+        if(queryString.length > 0) {
+
+            begin = queryString.indexOf(parameterName);
+
+            if(begin != -1) {
+
+                begin += parameterName.length;
+
+                end = queryString.indexOf("&", begin);
+
+                if(end == -1) {
+
+                    end = queryString.length;
+
+                }
+
+                return unescape(queryString.substring(begin, end));
+
+            }
+
+            return "";
+
+        }
+
+    }
+
+</script>
+</head>
+<body>
+</body>
+</html>

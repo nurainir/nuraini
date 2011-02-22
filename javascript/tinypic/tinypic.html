@@ -1,0 +1,48 @@
+<html>
+<head>
+<script>
+/**
+Program kecil untuk memasukkan tinypic http://tinypic.com/  plugin sebagai tempat menyimpan gambar dan video
+author : Nur Aini Rakhmawati
+license : GPL
+since : 22 February 2011
+**/
+
+// fungsi akan dipanggil setelah upload image atau video
+function postIt(text)
+{
+// urlpic adalah id dari sebuah div di
+document.getElementById('urlpic').innerHTML='<a href="'+text+'">disini gambarnya</a>';
+}
+</script>
+
+</head>
+<body>
+
+Program kecil untuk memasukkan tinypic http://tinypic.com/  plugin sebagai tempat menyimpan gambar dan video<br/>
+author : Nur Aini Rakhmawati<br/>
+license : GPL<br/>
+since : 22 February 2011<br/>
+<p>
+Untuk bisa menampilkan plugin ini anda bisa pergi ke halaman <a href="http://tinypic.com/developer.php">http://tinypic.com/developer.php</a>
+</p>
+<div align="center">
+<script type="text/javascript">
+tinypic_layout = 'narrow';
+tinypic_type = 'both';
+tinypic_links = 'url';
+tinypic_language = 'en';
+tinypic_search = 'false';
+tinypic_autoload = true;
+// url harus lengkap dengan httpnya
+tinypic_callback_url = 'http://localhost/callback.php';
+tinypic_callback_text = 'tampilkan URL';
+</script>
+
+<script src="http://plugin.tinypic.com/j/plugin.js" type="text/javascript"></script>
+</div>
+<div id="urlpic">
+</div>
+
+</body>
+</html>

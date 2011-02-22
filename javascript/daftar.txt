@@ -1,0 +1,1 @@
+1. tinypic : Program kecil untuk memasukkan tinypic http://tinypic.com/  plugin sebagai tempat menyimpan gambar dan video
