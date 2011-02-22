@@ -24,3 +24,6 @@
 = Debian =
  * *foo-1.0* : contoh pemaketan java di debian
  * *iin-3.0* : contoh pemaketan web dgn database di debian
+
+= JavaScript =
+ * *tinypic* : Program untuk memasukkan tinypic http://tinypic.com/  plugin sebagai tempat menyimpan gambar dan video
