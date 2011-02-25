@@ -1,0 +1,10 @@
+PREFIX b: <http://demo.sindice.net/latctemp/oldresult/buku#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?judul ?jumlah ?pengarang
+WHERE {
+?book rdf:type b:Buku .
+?book b:jumlah ?jumlah .
+?book b:judulBuku ?judul .
+?book b:pengarang ?pengarang
+}

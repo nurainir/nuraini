@@ -1,0 +1,16 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix b: <http://demo.sindice.net/latctemp/oldresult/buku#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<> dc:title "Buku di perpus" .
+
+<#Matematika> rdf:type b:Buku .
+<#Matematika> b:judulBuku "Berhitung 1 2 3" .
+<#Matematika> b:pengarang "Keyrani" .
+<#Matematika> b:jumlah 3 .
+
+
+<#Bahasa> rdf:type b:Buku .
+<#Bahasa> b:judulBuku "Bahasa Percakapan" .
+<#Bahasa> b:pengarang "Syifa" .
+<#Bahasa> b:jumlah 6 .

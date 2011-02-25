@@ -1,0 +1,23 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+:Buku rdf:type rdfs:Class .
+
+:judulBuku rdf:type rdf:Property .
+:judulBuku rdfs:domain :Buku .
+:judulBuku rdfs:range rdfs:Literal .
+:judulBuku rdfs:comment "Judul buku dalam string" .
+
+
+:pengarang rdf:type foaf:person .
+:pengarang rdfs:domain :Buku .
+:pengarang rdfs:range rdfs:Literal .
+:pengarang rdfs:comment "Nama pengarang" .
+
+:jumlah rdf:type rdf:Property .
+:jumlah rdfs:range xsd:integer .
+:jumlah rdfs:domain :Buku .
