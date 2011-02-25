@@ -27,3 +27,6 @@
 
 = JavaScript =
  * *tinypic* : Program untuk memasukkan tinypic http://tinypic.com/  plugin sebagai tempat menyimpan gambar dan video
+
+= LinkedData =
+ * *bukuN3* : contoh penggunaan N3 dan sparql untuk kasus buku
