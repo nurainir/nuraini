@@ -16,7 +16,7 @@
  * *CopyMergeRegexToLocal* : untuk melakukan penggabungan beberapa file dalam satu direktori dengan format regex tertentu di hdfs
  * *ReadErrorProcess* : untuk membaca error jika menjalankan JAR
  * *ContohEditText* : contoh penggunaan EditText di Android
-
+ * *AksesFile* : contoh membaca dan menulis file di android
 
 = PHP =
  * *UserPassword* : Pembuatan _salt_ (garam) dan password secara sederhana dan menggunakan _library_ yang ada di PHP.
