@@ -15,6 +15,7 @@
  * *Memory game* : Permainan Memori di Android
  * *CopyMergeRegexToLocal* : untuk melakukan penggabungan beberapa file dalam satu direktori dengan format regex tertentu di hdfs
  * *ReadErrorProcess* : untuk membaca error jika menjalankan JAR
+ * *ContohEditText* : contoh penggunaan EditText di Android
 
 
 = PHP =
