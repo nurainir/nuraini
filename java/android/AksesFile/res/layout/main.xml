@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+	android:id="@+id/isifile" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/isifile"
+    />
+    
+<ImageButton android:id="@+id/ImageButtontulis" 
+style="@android:style/Widget.Button.Inset"
+            android:src="@android:drawable/ic_menu_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginBottom="2dip"
+            android:padding="10dip"
+></ImageButton>
+
+<ImageButton android:id="@+id/ImageButtonbaca" 
+style="@android:style/Widget.Button.Inset"
+            android:src="@android:drawable/ic_menu_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_marginBottom="2dip"
+            android:padding="10dip"
+></ImageButton>
+</LinearLayout>
