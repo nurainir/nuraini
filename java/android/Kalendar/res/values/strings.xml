@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">Kalendar</string>
+<string name="Hidup">Alarm Hidup</string>
+<string name="Mati">Alarm Mati</string>
+<string name="peringatan">peringatan dari Kalendar anda</string>
+<string name="cekperingatan">Silahkan cek di program Kalendar</string>
+</resources>
