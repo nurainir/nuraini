@@ -17,6 +17,7 @@
  * *ReadErrorProcess* : untuk membaca error jika menjalankan JAR
  * *ContohEditText* : contoh penggunaan EditText di Android
  * *AksesFile* : contoh membaca dan menulis file di android
+ * *Kalendar* : Alarm yang diset dengan DatePicker dan TimePicker dan akan memberikan notifikasi status (Android)
 
 = PHP =
  * *UserPassword* : Pembuatan _salt_ (garam) dan password secara sederhana dan menggunakan _library_ yang ada di PHP.
