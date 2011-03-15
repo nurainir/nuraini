@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/LinearLayout01"
+    >
+
+
+<LinearLayout android:id="@+id/LinearLayout02" android:layout_width="fill_parent" 
+ android:layout_below="@+id/LinearLayout01" android:orientation="vertical"
+android:layout_height="wrap_content">
+
+<LinearLayout android:id="@+id/LinearLayout03" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<TextView android:text="Masukkan angka 0-50" android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView><EditText android:text="" android:id="@+id/EditText01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numeric="decimal"></EditText>
+
+</LinearLayout><Button android:text="inputkan" android:id="@+id/Button01" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+
+
+</LinearLayout>
+</LinearLayout>
