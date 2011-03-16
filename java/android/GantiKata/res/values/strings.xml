@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, test!</string>
+    <string name="app_name">test</string>
+<string-array name="nomorbaru"><item>satu</item>
+<item>dua</item>
+<item>tiga</item>
+<item>empat</item>
+</string-array>
+ <string-array name="newnumber"><item>one</item>
+<item>two</item>
+<item>three</item>
+<item>four</item>
+</string-array>
+
+</resources>
