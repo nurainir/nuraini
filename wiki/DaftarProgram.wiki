@@ -12,14 +12,19 @@
  * *TestHBase* : Program untuk melakukan testing apakah HBASE running
  * *FileOrder* : Program untuk untuk mengurutkan daftar file
  * *TextEditor* : Program GUI text editor
- * *Memory game* : Permainan Memori di Android
  * *CopyMergeRegexToLocal* : untuk melakukan penggabungan beberapa file dalam satu direktori dengan format regex tertentu di hdfs
  * *ReadErrorProcess* : untuk membaca error jika menjalankan JAR
+
+
+= Android =
+ * *Memory game* : Permainan Memori di Android
  * *ContohEditText* : contoh penggunaan EditText di Android
  * *AksesFile* : contoh membaca dan menulis file di android
  * *Kalendar* : Alarm yang diset dengan DatePicker dan TimePicker dan akan memberikan notifikasi status (Android)
  * *Grafik* : Membuat grafik linear di Android berdasarkan input dari user
  * *GantiKata* : contoh penggunaan TextSwitcher, Menu, String Array dan perpindahan Activity
+* *GantiTab* : contoh pergantian tab, webview dan ratingbar di Android
+
 
 = PHP =
  * *UserPassword* : Pembuatan _salt_ (garam) dan password secara sederhana dan menggunakan _library_ yang ada di PHP.
