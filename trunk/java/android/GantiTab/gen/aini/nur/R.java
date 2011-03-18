@@ -14,9 +14,10 @@ public final class R {
         public static final int icon=0x7f020000;
     }
     public static final class id {
+        public static final int Button01=0x7f050002;
         public static final int LinearLayout01=0x7f050000;
         public static final int RatingBar01=0x7f050001;
-        public static final int WebView01=0x7f050002;
+        public static final int WebView01=0x7f050003;
     }
     public static final class layout {
         public static final int main=0x7f030000;

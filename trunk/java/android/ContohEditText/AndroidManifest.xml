@@ -12,7 +12,8 @@
             </intent-filter>
         </activity>
 
-    </application>
+    <activity android:name="Terima"></activity>
+</application>
 
 
 </manifest> 
