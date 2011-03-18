@@ -23,7 +23,7 @@
  * *Kalendar* : Alarm yang diset dengan DatePicker dan TimePicker dan akan memberikan notifikasi status (Android)
  * *Grafik* : Membuat grafik linear di Android berdasarkan input dari user
  * *GantiKata* : contoh penggunaan TextSwitcher, Menu, String Array dan perpindahan Activity
-* *GantiTab* : contoh pergantian tab, webview dan ratingbar di Android
+ * *GantiTab* : contoh pergantian tab, webview dan ratingbar di Android
 
 
 = PHP =
