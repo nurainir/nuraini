@@ -25,7 +25,7 @@
  * *GantiKata* : contoh penggunaan TextSwitcher, Menu, String Array dan perpindahan Activity
  * *GantiTab* : contoh pergantian tab, webview dan ratingbar di Android
  * *Nyeting* : contoh melakukan setting untuk aplikasi
-
+ * *AnTwit* : contoh melakukan authentifikasi OAUTH twitter dan melakukan update status dengan library jtwitter
 
 = PHP =
  * *UserPassword* : Pembuatan _salt_ (garam) dan password secara sederhana dan menggunakan _library_ yang ada di PHP.
