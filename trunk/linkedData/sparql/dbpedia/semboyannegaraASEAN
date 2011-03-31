@@ -1,0 +1,17 @@
+fungsi	 : Daftar semboyan negara ASEAN
+author	 : Nur Aini Rakhmawati
+SPARQL Endpoint : http://dbpedia.org/sparql 
+#############################
+
+PREFIX dcterms:  <http://purl.org/dc/terms/>
+PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX dbpprop:  <http://dbpedia.org/property/>
+PREFIX category: <http://dbpedia.org/resource/Category:>
+SELECT ?namanegara, ?semboyan
+WHERE {
+    ?negara dcterms:subject category:Southeast_Asian_countries ;
+             rdfs:label ?namanegara ;
+          dbpprop:nationalMotto ?semboyan .
+FILTER (langMatches(lang(?namanegara), "en")) .
+}
+ORDER BY ASC(?namanegara)

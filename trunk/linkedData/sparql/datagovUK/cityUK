@@ -1,0 +1,17 @@
+fungsi : mencari Kota di UK
+author : Nur Aini Rakhmawati
+SPARQL Endpoint : http://services.data.gov.uk/statistics/sparql 
+#############################
+
+
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix administrative-geography: <http://statistics.data.gov.uk/def/administrative-geography/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?city ?name
+where {
+?city rdf:type administrative-geography:LocalAuthorityDistrict .
+?city rdfs:label ?name .
+FILTER (langMatches(lang(?name), "en")) .
+}
+ORDER by ?name

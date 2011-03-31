@@ -1,0 +1,13 @@
+fungsi	 : Daftar Peneliti Semantic Web dan Asalnya
+author	 : Nur Aini Rakhmawati
+SPARQL Endpoint : http://data.semanticweb.org/sparql
+#############################
+
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology#>
+
+SELECT DISTINCT ?nama ?asal
+WHERE { ?nama a foaf:Person.
+?nama swc:affiliation ?asal .
+ }
+order by ?nama

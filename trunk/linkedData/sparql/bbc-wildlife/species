@@ -1,0 +1,28 @@
+fungsi : mencari species
+author : Nur Aini Rakhmawati
+SPARQL Endpoint : http://api.talis.com/stores/bbc-wildlife/services/sparql 
+#############################
+
+
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix bbcwildlife: <http://purl.org/ontology/wo/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?species ?name
+WHERE 
+{ 
+?species rdf:type bbcwildlife:Species.
+?species rdfs:label ?name .
+ }
+ORDER BY ?name
+
+###########################################
+
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?property ?hasValue ?isValueOf
+WHERE {
+  { <http://www.bbc.co.uk/nature/species/Aardvark#species> ?property ?hasValue }
+  UNION
+  { ?isValueOf ?property <http://www.bbc.co.uk/nature/species/Aardvark#species> }
+}
+ORDER BY (!BOUND(?hasValue)) ?property ?hasValue ?isValueOf
