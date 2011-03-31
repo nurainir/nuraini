@@ -58,6 +58,6 @@
  * *semboyannegaraASEAN* : Daftar semboyan negara ASEAN
 == SILKSpecification ==
 [http://www4.wiwiss.fu-berlin.de/bizer/silk/]
- * *city-dbpedia-datagov.xml* :
- * *researcher-dblp-datasemantic.xml* :
- * *species-Dbpedia-Bbcwildlife.xml* :
+ * *city-dbpedia-datagov.xml* : owl-sameAs kota di datagov.uk dengan dbpedia
+ * *researcher-dblp-datasemantic.xml* : owl-sameAs peneliti di dblp dan datasemantic
+ * *species-Dbpedia-Bbcwildlife.xml* : owl-sameAs species di dbpedia dengan bbcwildlife
