@@ -43,7 +43,17 @@
  * *bukuN3* : contoh penggunaan N3 dan sparql untuk kasus buku
 == SPARQL ==
 === bbc-wildlife ===
+[http://api.talis.com/stores/bbc-wildlife/services/sparql]
+ * *species* :
 === datagovUK ===
+ * *cityUK* :
 === datasemanticweb ===
+ * *asalpenelitiSW* :
 === dbpedia ===
+ * *species* :
+ * *cityUK* :
+ * *semboyannegaraASEAN* :
 == SILKSpecification ==
+ * *city-dbpedia-datagov.xml* :
+ * *researcher-dblp-datasemantic.xml* :
+ * *species-Dbpedia-Bbcwildlife.xml* :
