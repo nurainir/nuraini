@@ -1,0 +1,20 @@
+fungsi	 : mencari Kota di UK
+author	 : Nur Aini Rakhmawati
+SPARQL Endpoint : http://dbpedia.org/sparql 
+#############################
+
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix opencyc:    <http://sw.opencyc.org/2008/06/10/concept/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?city ?name
+where {
+{?city rdf:type    opencyc:Mx8Ngh4rvA7TpwpEbGdrcN5Y29ycB4rvViWaZwpEbGdrcN5Y29ycA}
+UNION
+{?city rdf:type yago:EconomiesByCityInEngland}
+UNION 
+{?city rdf:type yago:WorldHeritageSitesInEngland}
+UNION {?city rdf:type yago:BritishCapitals}.
+?city rdfs:label ?name .
+FILTER (langMatches(lang(?name), "en")).
+}

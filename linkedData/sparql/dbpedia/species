@@ -1,0 +1,18 @@
+fungsi : mencari species
+author : Nur Aini Rakhmawati
+SPARQL Endpoint : http://dbpedia.org/sparql 
+#############################
+
+prefix dbpedia-owl: <http://dbpedia.org/ontology/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+select ?species ?name
+where
+{
+?species rdf:type dbpedia-owl:Species .
+?species rdfs:label ?name .
+FILTER langMatches( lang(?name), "EN" ) }
+ORDER BY ?name
+
+
