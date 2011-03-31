@@ -44,16 +44,20 @@
 == SPARQL ==
 === bbc-wildlife ===
 [http://api.talis.com/stores/bbc-wildlife/services/sparql]
- * *species* :
+ * *species* : mencari species
 === datagovUK ===
- * *cityUK* :
+[http://services.data.gov.uk/statistics/sparql]
+ * *cityUK* : mencari Kota di UK
 === datasemanticweb ===
- * *asalpenelitiSW* :
+[http://data.semanticweb.org/sparql]
+ * *asalpenelitiSW* : Daftar Peneliti Semantic Web dan Asalnya
 === dbpedia ===
- * *species* :
- * *cityUK* :
- * *semboyannegaraASEAN* :
+[http://dbpedia.org/sparql]
+ * *species* : mencari species
+ * *cityUK* : mencari Kota di UK
+ * *semboyannegaraASEAN* : Daftar semboyan negara ASEAN
 == SILKSpecification ==
+[http://www4.wiwiss.fu-berlin.de/bizer/silk/]
  * *city-dbpedia-datagov.xml* :
  * *researcher-dblp-datasemantic.xml* :
  * *species-Dbpedia-Bbcwildlife.xml* :
