@@ -1,0 +1,14 @@
+fungsi	 : Daftar penyanyi
+author	 : Nur Aini Rakhmawati
+SPARQL Endpoint : http://dbtune.org/musicbrainz/sparql 
+#############################
+
+
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+
+SELECT ?penyanyi WHERE {
+?x a mo:MusicArtist.
+?x foaf:name ?penyanyi
+}
+limit 10

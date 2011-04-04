@@ -1,0 +1,9 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX BibTeX: <http://data.bibbase.org/ontology/#>
+
+
+SELECT DISTINCT * WHERE {
+  ?s a BibTeX:Author.
+?s rdfs:label ?name
+}
+LIMIT 10

@@ -1,0 +1,18 @@
+fungsi	 : Daftar peneliti
+author	 : Nur Aini Rakhmawati
+SPARQL Endpoint : http://citeseer.rkbexplorer.com/sparql/ 
+#############################
+
+PREFIX id:   <http://citeseer.rkbexplorer.com/id/>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX akt:  <http://www.aktors.org/ontology/portal#>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX akt:  <http://www.aktors.org/ontology/portal#>
+PREFIX akts: <http://www.aktors.org/ontology/support#>
+
+
+SELECT *
+WHERE { ?s rdf:type akt:Person .
+         ?s akt:full-name ?name
+     } LIMIT 10
