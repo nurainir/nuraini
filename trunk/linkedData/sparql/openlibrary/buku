@@ -1,0 +1,13 @@
+fungsi	 : mencari buku
+author	 : Nur Aini Rakhmawati
+SPARQL Endpoint : http://api.talis.com/stores/openlibrary/services/sparql 
+#############################
+
+PREFIX bibo: <http://purl.org/ontology/bibo/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+
+SELECT ?book ?title
+WHERE { ?book a bibo:Book .
+?book dcterms:title ?title
+ }
+limit 10
