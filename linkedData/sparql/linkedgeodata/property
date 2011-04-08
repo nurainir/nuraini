@@ -1,0 +1,12 @@
+fungsi	 : Mencari nilai predicate daN object
+author	 : Nur Aini Rakhmawati
+SPARQL Endpoint : http://linkedgeodata.org/sparql/
+#############################
+
+SELECT DISTINCT ?property ?hasValue ?isValueOf
+WHERE {
+  { <http://linkedgeodata.org/triplify/way85932445> ?property ?hasValue }
+  UNION
+  { ?isValueOf ?property <http://linkedgeodata.org/triplify/way85932445> }
+}
+ORDER BY (!BOUND(?hasValue)) ?property ?hasValue ?isValueOf
