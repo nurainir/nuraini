@@ -61,3 +61,10 @@
  * *city-dbpedia-datagov.xml* : owl-sameAs kota di datagov.uk dengan dbpedia
  * *researcher-dblp-datasemantic.xml* : owl-sameAs peneliti di dblp dan datasemantic
  * *species-Dbpedia-Bbcwildlife.xml* : owl-sameAs species di dbpedia dengan bbcwildlife
+ * *album-dbpedia-dbtune.xml* : owl-sameAs Album di dbpedia dan dbtune
+ * *citySpain-dbpedia-geo.linkeddata.es.xml* : owl-sameAs kota Spanyol di dbpedia dan geo.linkeddata.es dalam bahasa spanyol
+ * *author-DBLP-citeseer.xml* : owl-sameAs Peneliti di DBLP dan Citeseer
+ * *embassy-linkedgeodata-Dbpedia.xml* : lgdp:country posisi kedutaan di setiap negara
+ * *author-dbpedia-openlibrary.xml* : relasi dbpedia-owl:author antara buku di dbpedia dengan penulis di Openlibrary
+ * *proteinorganism-stich-dbpedia.xml* : stitch:organism kandungang protein dalam species di dbpedia
+ * *band-dbpedia-dbtune.xml* : owl-sameAs grup band di dbpedia dengan dbtune
