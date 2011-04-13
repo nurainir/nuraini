@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Silk>
+
+  <Prefixes>
+    <Prefix id="rdfs" namespace="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix id="dbpedia" namespace="http://dbpedia.org/resource/"/>
+    <Prefix id="dbpedia-owl" namespace="http://dbpedia.org/ontology/"/>
+    <Prefix id="linkedgeodata" namespace="http://linkedgeodata.org/triplify/"/>
+    <Prefix id="lgdo" namespace="http://geo.linkeddata.es/ontology/"/>
+     <Prefix id="owl" namespace="http://www.w3.org/2002/07/owl#"/>
+    <Prefix id="geo" namespace="http://www.w3.org/2003/01/geo/wgs84_pos#"/>
+  </Prefixes>
+
+ <DataSources>
+  <DataSource id="dbpedia" type="sparqlEndpoint">
+      <Param name="endpointURI" value="http://live.dbpedia.org/sparql/"/>
+      <Param name="retryCount" value="3"/>
+      <Param name="retryPause" value="1000"/>
+    </DataSource>
+   
+    <DataSource id="linkedgeodata" type="sparqlEndpoint">
+     <Param name="endpointURI" value="http://geo.linkeddata.es/sparql"/>
+      <Param name="retryCount" value="3"/>
+       <Param name="retryPause" value="1000"/>
+    </DataSource>
+  </DataSources>
+
+  
+      <Blocking blocks="100"/>
+  
+  <Interlinks>
+    <Interlink id="citySpain">
+      <LinkType>owl:sameAs</LinkType>
+
+      <SourceDataset dataSource="dbpedia" var="a">
+        <RestrictTo>
+ ?a rdf:type dbpedia-owl:Settlement. ?a dbpedia-owl:country dbpedia:Spain.
+        </RestrictTo>
+      </SourceDataset>
+
+      <TargetDataset dataSource="linkedgeodata" var="b">
+        <RestrictTo>
+       ?b a lgdo:Municipio   
+        </RestrictTo>
+      </TargetDataset>
+
+      <LinkCondition>
+
+      <Aggregate type="max">
+          <Compare required="false" metric="jaro" weight="1">
+                        <TransformInput function="lowerCase">
+            <Input path="?a/rdfs:label[@lang = 'es']"/>
+</TransformInput>
+<TransformInput function="lowerCase">
+            <Input path="?b/rdfs:label[@lang = 'es']"/>
+</TransformInput>
+          </Compare>
+        </Aggregate>
+    
+
+      </LinkCondition>
+
+      <Filter threshold="0.9"/>
+
+      <Outputs>
+        <Output minConfidence="0.95" type="file">
+          <Param name="file" value="citySpain_accepted.nt"/>
+          <Param name="format" value="ntriples"/>
+        </Output>
+        <Output maxConfidence="0.95" type="file">
+          <Param name="file" value="citySpain_verify.nt"/>
+          <Param name="format" value="alignment"/>
+        </Output>
+      </Outputs>
+    </Interlink>
+  </Interlinks>
+
+</Silk>
