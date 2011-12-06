@@ -34,6 +34,13 @@ twitdua
 }}}
  # *KBrss* membutuhkan data rss yang juga disimpan dalam file dengan format : 
 `[tag] urlRSS statusterakhir filter jedawaktu`
+keterangan
+  * data tsb dipisahkan dengan tabulasi atau \t. 
+  * Kita bisa memasukkan berapapun data rss. 
+  * [tag] merupakan tag yang kita pilih saat update status misal [berita], [humor]. Jika anda tidak menggunakannya cukup beri tanda minus (*-*)
+  * urlRSS merupakan url RSS media yang andapilih
+  * statusterakhir : merupakan judul berita terakhir terupdate, jika anda tidak tahu tulis saja sembarang.
+  * jedawaktu : adalah angka berapa detik jeda antar twit. Jika 10 berarti jeda waktu 10 detik.
 contoh :
 {{{
 -	http://us.detikinet.com/index.php/detik.feed/	Siapa Paling Bersalah dalam Kasus Pencurian Pulsa?	blankon|android|linux|open source|oss|ubuntu	10
