@@ -1,5 +1,4 @@
 #labels Featured
-
 = Pendahuluan =
 
 KeryaniBatuk adalah program twitter klien berbasis perl agar mempermudah kerja admin twitter dalam mengupdate status. Mengapa namanya *KeyraniBatuk* ? karena program ini dibuat saat Keyrani, anak saya sedang sakit batuk :) Batuk disini berarti batuk-batuk mengeluarkan status ditwitter sehingga follower anda terjangkit virus :)
@@ -42,6 +41,7 @@ twitdua
   * [tag] merupakan tag yang kita pilih saat update status misal [berita], [humor]. Jika anda tidak menggunakannya cukup beri tanda minus (*-*)
   * urlRSS merupakan url RSS media yang andapilih
   * statusterakhir : merupakan judul berita terakhir terupdate, jika anda tidak tahu tulis saja sembarang.
+  * filter adalah regex jika anda tidak melakukan filter cukup tulis `.*`
   * jedawaktu : adalah angka berapa detik jeda antar twit. Jika 10 berarti jeda waktu 10 detik.
 contoh :
 {{{
