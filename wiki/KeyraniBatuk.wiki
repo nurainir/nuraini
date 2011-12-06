@@ -11,12 +11,12 @@ KeryaniBatuk adalah program twitter klien berbasis perl agar mempermudah kerja a
 
 = Kebutuhan =
  # Mempunyai akun aplikasi di [http://dev.twitter.com] agar mendapatkan 
- * consumer_key
- * consumer_secret
- * access_token
- * access_token_secret
+  * consumer_key
+  * consumer_secret
+  * access_token
+  * access_token_secret
  # Install modul perl untuk rss dan twitter
- * apt-get install libnet-twitter-lite-perl 
- * apt-get install libxml-rsslite-perl
+  * apt-get install libnet-twitter-lite-perl 
+  * apt-get install libxml-rsslite-perl
 
 = Cara Install =
