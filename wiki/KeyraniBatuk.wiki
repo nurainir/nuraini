@@ -6,8 +6,8 @@
 KeryaniBatuk adalah program twitter klien berbasis perl agar mempermudah kerja admin twitter dalam mengupdate status. Mengapa namanya *KeyraniBatuk* ? karena program ini dibuat saat Keyrani, anak saya sedang sakit batuk :) Batuk disini berarti batuk-batuk mengeluarkan status ditwitter sehingga follower anda terjangkit virus :)
 
 = Fitur =
- # Melakukan serangkain twit dalam jeda waktu yang ditentukan
- # Mengambil berita berbagai media via RSS, melakuakn filter berdasarkan regex dan melakukan twit berita tersebut
+ # *KBsendiri* Melakukan serangkain twit dalam jeda waktu yang ditentukan
+ # *KBrss* Mengambil berita berbagai media via RSS, melakuakn filter berdasarkan regex dan melakukan twit berita tersebut
 
 = Kebutuhan =
  # Mempunyai akun aplikasi di [http://dev.twitter.com] agar mendapatkan 
@@ -27,4 +27,16 @@ consumer_secret=BBB
 access_token=CCC
 access_token_secret=DDD
 }}}
- # 
+ # *KBsendiri* membutuhkan data twit yang harus disimpan dalam sebuah file. Satu baris - satu twit. Contoh :
+{{{
+twitsatu
+twitdua
+}}}
+ # *KBrss* membutuhkan data rss yang juga disimpan dalam file dengan format : 
+`[tag] urlRSS statusterakhir filter jedawaktu`
+contoh :
+{{{
+-	http://us.detikinet.com/index.php/detik.feed/	Siapa Paling Bersalah dalam Kasus Pencurian Pulsa?	blankon|android|linux|open source|oss|ubuntu	10
+[kompas]	http://www.kompas.com/getrss/tekno	Inilah 11 Prediksi Tren Teknologi 2012	blankon|android|linux|open source|oss|ubuntu	30
+-	http://www.republika.co.id/rss	Palestina Lanjutkan Upaya Jadi Anggota Penuh PBB	.*	20
+}}}
