@@ -41,7 +41,7 @@ twitdua
   * `[tag]` merupakan tag yang kita pilih saat update status misal `[berita]`, `[humor]`. Jika anda tidak menggunakannya cukup beri tanda minus (*-*)
   * urlRSS merupakan url RSS media yang andapilih
   * statusterakhir : merupakan judul berita terakhir terupdate, jika anda tidak tahu tulis saja sembarang.
-  * filter adalah regex jika anda tidak melakukan filter cukup tulis `.*`
+  * filter adalah perintah regex jika anda tidak melakukan filter cukup tulis `.*` , misal anda ingin hanya linux atau blankon yang masuk maka cukup ketikkan `linux|blankon` 
   * jedawaktu : adalah angka berapa detik jeda antar twit. Jika 10 berarti jeda waktu 10 detik.
 contoh :
 {{{
