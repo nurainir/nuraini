@@ -47,7 +47,7 @@ contoh :
 [kompas]	http://www.kompas.com/getrss/tekno	Inilah 11 Prediksi Tren Teknologi 2012	blankon|android|linux|open source|oss|ubuntu	30
 -	http://www.republika.co.id/rss	Palestina Lanjutkan Upaya Jadi Anggota Penuh PBB	.*	20
 }}}
- # cara menjalankan
+ = Cara menjalankan =
   * ekstrak KeyraniBatuk-1.0.zip
   * siapkan data twitter key yang ada diatas, data twit atau data rss.
   * jalankan dengan command line :
