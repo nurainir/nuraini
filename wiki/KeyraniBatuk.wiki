@@ -9,6 +9,9 @@ KeryaniBatuk adalah program twitter klien berbasis perl agar mempermudah kerja a
  # *KBsendiri* Melakukan serangkain twit dalam jeda waktu yang ditentukan
  # *KBrss* Mengambil berita berbagai media via RSS, melakuakn filter berdasarkan regex dan melakukan twit berita tersebut
 
+= Download =
+silahkan download disini [http://code.google.com/p/nuraini/downloads/detail?name=KeyraniBatuk-1.0.zip] 
+
 = Kebutuhan =
  # Mempunyai akun aplikasi di [http://dev.twitter.com] agar mendapatkan 
   * consumer_key
