@@ -1,5 +1,4 @@
 #labels Featured
-#Panduan penggunaan KeyraniBatuk
 
 = Pendahuluan =
 
