@@ -34,7 +34,7 @@ twitdua
 }}}
  # *KBrss* membutuhkan data rss yang juga disimpan dalam file dengan format : 
 `[tag] urlRSS statusterakhir filter jedawaktu`
-keterangan
+ keterangan
   * data tsb dipisahkan dengan tabulasi atau \t. 
   * Kita bisa memasukkan berapapun data rss. 
   * [tag] merupakan tag yang kita pilih saat update status misal [berita], [humor]. Jika anda tidak menggunakannya cukup beri tanda minus (*-*)
