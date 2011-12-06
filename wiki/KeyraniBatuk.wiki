@@ -38,7 +38,7 @@ twitdua
  keterangan
   * data tsb dipisahkan dengan tabulasi atau \t. 
   * Kita bisa memasukkan berapapun data rss. 
-  * [tag] merupakan tag yang kita pilih saat update status misal [berita], [humor]. Jika anda tidak menggunakannya cukup beri tanda minus (*-*)
+  * `[tag]` merupakan tag yang kita pilih saat update status misal `[berita]`, `[humor]`. Jika anda tidak menggunakannya cukup beri tanda minus (*-*)
   * urlRSS merupakan url RSS media yang andapilih
   * statusterakhir : merupakan judul berita terakhir terupdate, jika anda tidak tahu tulis saja sembarang.
   * filter adalah regex jika anda tidak melakukan filter cukup tulis `.*`
